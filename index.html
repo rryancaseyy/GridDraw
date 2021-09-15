@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+    <head>
+        <title>JS Sandbox</title>
+        <script type="text/javascript" src="script.js"></script>
+        <link rel="stylesheet" href="stylesheet.css">
+    </head>
+    <body onload="main();">
+        <div class="c-body-wrapper">
+            <div class="c-controls">
+                <div class="c-button" onclick="toggleGrid()">Toggle Grid</div>
+                <div class="c-button" onclick="clearCanvas() ">Clear Canvas</div>
+                <form class="c-canvas-form">
+                    <label for="rows"># Rows:</label>
+                    <input name="rows" class="c-rows-input"></input>
+                    <label for="cols"># Cols:</label>
+                    <input name="cols" class="c-cols-input"></input>
+                    <button class="c-button" type="button" onclick="redrawCanvas(10) ">Redraw Canvas</button>
+                </form>
+            </div>
+            <div class="c-palette-wrapper"></div>
+            <div class="c-canvas"></div>
+        </div>
+    </body>
+</html>
